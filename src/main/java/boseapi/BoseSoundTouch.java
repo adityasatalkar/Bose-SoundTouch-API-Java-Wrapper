@@ -4,10 +4,15 @@ import org.json.JSONObject;
 
 public class BoseSoundTouch {
 
-    public String IPAddress = null;
-    public JSONObject volume = null;
     public JSONObject bass = null;
+    public String IPAddress = null;
+    public JSONObject source = null;
+    public JSONObject volume = null;
+    public JSONObject presets = null;
+    public JSONObject getGroup = null;
     public JSONObject nowPlaying = null;
+    public JSONObject bassCapabilities = null;
+
 
     public JSONObject getVolume() throws Exception {
         this.volume = ApiCall.getEndPoint(getIP(),"volume");
@@ -32,6 +37,26 @@ public class BoseSoundTouch {
     public JSONObject getNowPlaying() throws Exception {
         this.nowPlaying = ApiCall.getEndPoint(getIP(), "now_playing");
         return this.nowPlaying;
+    }
+
+    public JSONObject getSource() throws Exception {
+        this.nowPlaying = ApiCall.getEndPoint(getIP(), "source");
+        return this.source;
+    }
+
+    public JSONObject getGroup() throws Exception {
+        this.getGroup = ApiCall.getEndPoint(getIP(), "getGroup");
+        return this.getGroup;
+    }
+
+    public JSONObject getBassCapabilities() throws Exception {
+        this.bassCapabilities = ApiCall.getEndPoint(getIP(), "bassCapabilities");
+        return this.bassCapabilities;
+    }
+
+    public JSONObject getPresets() throws Exception {
+        this.presets = ApiCall.getEndPoint(getIP(), "presets");
+        return this.presets;
     }
 
     public String getIP() throws Exception {

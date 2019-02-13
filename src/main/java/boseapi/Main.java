@@ -21,5 +21,17 @@ public class Main {
 
         JSONObject now_playing = boseSoundTouch.getNowPlaying();
         System.out.println("Now Playing : " + now_playing);
+
+        JSONObject bassCapabilities = boseSoundTouch.getBassCapabilities();
+        System.out.println("Bass Capabilities : " + bassCapabilities);
+
+        JSONObject presets = boseSoundTouch.getPresets();
+        System.out.println("Presets : " + presets);
+
+//        JSONObject source = boseSoundTouch.getSource();
+//        System.out.println("Get Sources : " + source);
+//
+//        JSONObject getGroup = boseSoundTouch.getGroup();
+//        System.out.println("Get Group : " + getGroup);
     }
 }
