@@ -15,6 +15,21 @@ Bose SoundTouch API that returns JSON. current implementations include :
 ```
 
 * setVolume()
+* getBassCapabilities()
+
+```
+{
+  "bassCapabilities": {
+    "bassMin": -9,
+    "bassDefault": 0,
+    "bassMax": 0,
+    "deviceID": "<DEVICE ID>",
+    "bassAvailable": true
+  }
+}
+
+```
+
 * getBass()
 
 ```$xslt
@@ -40,6 +55,14 @@ Bose SoundTouch API that returns JSON. current implementations include :
       "source": "STANDBY"
     }
   }
+}
+```
+
+* getPresets()
+
+```
+{
+  "presets": ""
 }
 ```
 
