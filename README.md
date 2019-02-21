@@ -1,5 +1,5 @@
-# Bose-SoundTouch-API
-Bose SoundTouch API that returns JSON. current implementations include :
+# Bose SoundTouch API Java Wrapper
+Bose SoundTouch API Java Wrapper that returns JSON. Current implementations include :
 
 * getVolume()
 
